@@ -1,0 +1,44 @@
+2014/03/07 17:01:17 ssh_connection_to_device.go:28: ( myV3Turret ) about to Dial
+2014/03/07 17:01:17 credentials.go:42: ( myV3Turret ) using password based credentials
+2014/03/07 17:01:19 ssh_connection_to_device.go:34: ( myV3Turret ) Dialed SSH without error
+2014/03/07 17:01:19 ssh_connection_to_device.go:36: ( myV3Turret ) successfully started a SSH connection to the device  myV3Turret
+2014/03/07 17:01:21 ssh_connection_to_device.go:73: ( myV3Turret ) ran the command ' ps -efl | grep automationd | grep -v grep ; if [ $? -ne 0 ] ; then sudo su -c "/etc/init.d/automationd start" ; fi ' on the device  myV3Turret  without error
+2014/03/07 17:01:21 tcp_connection_to_device.go:28: ( myV3Turret ) about to Dial TCP
+2014/03/07 17:01:21 tcp_connection_to_device.go:35: ( myV3Turret ) successfully started a TCP connection to the device  myV3Turret
+2014/03/07 17:01:44 tcp_connection_to_device.go:68: ( myV3Turret ) ran the command ' 1238;<?xml version="1.0"?>
+<commands>
+  <enableAutomation autoFormat="true" cpus="0 1"/>
+  <pressButton cpuid="0" button="12" duration="200"/>
+  <pause duration="800"/>
+  <pressButton cpuid="0" button="21" duration="200"/>
+  <pause duration="800"/>
+  <pressButton cpuid="0" button="22" duration="200"/>
+  <pause duration="800"/>
+  <pressButton cpuid="1" button="37" duration="200"/>
+  <pause duration="800"/>
+  <pressButton cpuid="1" button="0" duration="200"/>
+  <pause duration="800"/>
+  <pressButton cpuid="0" button="28" duration="200"/>
+  <pause duration="300"/>
+  <pressButton cpuid="0" button="25" duration="200"/>
+  <pause duration="300"/>
+  <pressButton cpuid="0" button="25" duration="200"/>
+  <pause duration="300"/>
+  <pressButton cpuid="0" button="27" duration="200"/>
+  <pause duration="300"/>
+  <pressButton cpuid="0" button="36" duration="200"/>
+  <pause duration="300"/>
+  <pause duration="2000"/>
+  <pressButton cpuid="0" button="11" duration="200"/>
+  <pause duration="800"/>
+  <pressButton cpuid="1" button="1" duration="200"/>
+  <pause duration="800"/>
+  <pause duration="10000"/>
+  <pressButton cpuid="0" button="21" duration="200"/>
+  <pause duration="800"/>
+  <disableAutomation/>
+  <returnQueuedMessages/>
+</commands>
+ ' on the device  myV3Turret  without error
+2014/03/07 17:01:44 ssh_connection_to_device.go:46: ( myV3Turret ) successfully stopped a SSH connection to the device  myV3Turret
+2014/03/07 17:01:44 tcp_connection_to_device.go:45: ( myV3Turret ) successfully stopped a TCP connection to the device  myV3Turret

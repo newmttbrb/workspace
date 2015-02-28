@@ -1,0 +1,9 @@
+(start-server)
+(load 'liberator-service/repl)
+(load "liberator-service/repl")
+exit
+(load "liberator-service/repl")
+(load "liberator_service/repl")
+(start-server)
+(liberator-service.repl/start-server)
+exit

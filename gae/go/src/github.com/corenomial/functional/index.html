@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Underscore JS Test</title>
+    <script type="application/javascript" src="/static/js/underscore.js"></script>
+  </head>
+
+  <body>
+
+    <h1>Underscore JS example</h1>
+
+  <script type="text/javascript">
+      function lameCSV(str) {
+          return _.reduce(
+                  str.split("\n"),
+                  function (table, row) {
+                      table.push(_.map(
+                              row.split(","),
+                              function (c) {
+                                  return c.trim();
+                              }));
+                      return table;
+                  },
+                  []);
+      }
+
+      alert(_.each(lameCSV("name,age,hair\nMerble,35,red\nBob,64,blonde"),alert));
+  </script>
+
+  </body>
+</html>
